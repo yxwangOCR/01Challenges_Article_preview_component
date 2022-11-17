@@ -1,4 +1,4 @@
-import Cards from "./components/Cards/Cards";
+import Cards from "./components/Cards";
 import Data from "./data.js";
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
           date={item.date}
         />
       ))}
+      <div className='footer'>
+        Challenge by Frontend Mentor. Coded by Yixuan Wang.
+      </div>
     </div>
   );
 }
