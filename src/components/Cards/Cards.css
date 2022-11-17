@@ -1,5 +1,6 @@
 .card {
-  width: 50%;
+  width: 70%;
+  height: 20rem;
   border-radius: 20px;
   display: flex;
   background-color: white;
@@ -12,14 +13,21 @@
 }
 .card__content {
   width: 70%;
-  margin: 2rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.card__content h2 {
+  margin: 0;
+  text-align: justify;
+}
 .card__content p {
+  margin: 0;
   line-height: 1.5rem;
   color: var(--Desaturated-Dark-Blue);
+  text-align: justify;
 }
 
 .card__content__author {
@@ -57,47 +65,29 @@
   color: white;
 }
 
-@media only screen and (max-width: 1440px) {
-  .card__content h1 {
-    font-size: 1.5em;
-  }
-  .card__content p {
-    font-size: 0.9em;
-  }
-  .card__content {
-    margin: 1rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .card {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1140px) {
   .card {
     width: 80%;
   }
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .card {
     width: 90%;
   }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 885px) {
   .card {
     width: 95%;
   }
 }
-
-@media screen and (max-width: 640px) {
+@media only screen and (max-width: 845px) {
   .App {
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
   .card {
     flex-direction: column;
+    gap: 2rem;
+    height: 100%;
   }
   .card img {
     width: 100%;
@@ -108,13 +98,17 @@
     width: 90%;
     margin: 1rem auto;
   }
-  .card__content__author {
-    align-items: center;
+
+  .card__content h2,
+  .card__content p {
+    padding-bottom: 1rem;
   }
 
-  .card__content__author__info__container {
-    align-items: flex-start;
+  .card__content__author__info h3,
+  .card__content__author__info p {
+    padding: 0;
   }
+
   .card__content__author__info__container img {
     height: 50px;
     width: 50px;

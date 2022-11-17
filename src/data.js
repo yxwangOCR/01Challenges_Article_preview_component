@@ -6,8 +6,8 @@ const articale = [
   {
     title:
       "Shift the overall look and feel by adding these wonderful touches to furniture in your home",
-    name: "Artículo",
-    date: "2019-01-01",
+    name: "Michelle",
+    date: "January 20, 2019",
     imgUrl: Img1,
     profile: Profile1,
     description:
@@ -16,8 +16,8 @@ const articale = [
   {
     title:
       "Do you ever find yourself in a room and it just feels like something’s missing? Well, I have the easy fix for you! ",
-    name: "Artículo",
-    date: "2019-01-01",
+    name: "Campbell",
+    date: "November 20, 2022",
     imgUrl: Img2,
     profile: Profile2,
     description:

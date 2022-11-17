@@ -10,15 +10,15 @@ const Cards = ({ imgUrl, title, name, date, profile, description }) => {
       <div className='card'>
         <img src={imgUrl} alt={title} />
         <div className='card__content'>
-          <h1>{title}</h1>
+          <h2>{title}</h2>
           <p>{description}</p>
           <div className='card__content__author'>
             <div className='card__content__author__info__container'>
               <img src={profile} alt={name} />
-              <span className='card__content__author__info'>
+              <div className='card__content__author__info'>
                 <h3>{name}</h3>
                 <p>{date}</p>
-              </span>
+              </div>
             </div>
             {isToggled && <Icons />}
             <span className='share__icon' onClick={setToggle}>

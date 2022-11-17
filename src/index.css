@@ -7,7 +7,6 @@
 }
 
 body {
-  font-size: 13px;
   font-family: "Work Sans", sans-serif;
   background-color: var(--Light-Grayish-Blue);
   margin: 0 auto;
@@ -22,7 +21,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  row-gap: 4em;
+  row-gap: 4rem;
   justify-content: center;
   align-items: center;
 }
