@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/01Challenges_Article_preview_component/static/css/main.6236eca6.css",
+    "main.js": "/01Challenges_Article_preview_component/static/js/main.c921256d.js",
+    "static/media/drawers.jpg": "/01Challenges_Article_preview_component/static/media/drawers.631135b079e9f19bada8.jpg",
+    "static/media/architecture.jpg": "/01Challenges_Article_preview_component/static/media/architecture.d8b03727312f8b42ef25.jpg",
+    "static/media/avatar-campbell.jpg": "/01Challenges_Article_preview_component/static/media/avatar-campbell.86418473c9f1612a01f8.jpg",
+    "index.html": "/01Challenges_Article_preview_component/index.html",
+    "main.6236eca6.css.map": "/01Challenges_Article_preview_component/static/css/main.6236eca6.css.map",
+    "main.c921256d.js.map": "/01Challenges_Article_preview_component/static/js/main.c921256d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6236eca6.css",
+    "static/js/main.c921256d.js"
+  ]
+}
