@@ -4,36 +4,9 @@
 
 
 
-.card__footer__info img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.card__footer__info p:nth-child(1) {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--Title);
-}
 
-.card__footer__info p:nth-child(2) {
-  font-size: 12px;
-  font-weight: 300;
-  color: var(--Text);
-}
 
-.card__footer__share {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: var(--Body-Background);
-  color: var(--Title);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  cursor: pointer;
-}
+
 
 .card__footer {
   display: flex;
@@ -66,22 +39,3 @@
   color: var(--Text);
 }
 
-@media screen and (min-width: 768px) {
-  .card {
-    width: 670px;
-    height: 270px;
-    display: flex;
-  }
-  .card__image {
-    width: 250px;
-    height: 100%;
-    border-radius: 10px 0 0 10px;
-  }
-  .card__text {
-    margin: 0 2rem;
-  }
-
-  .card__footer__toggled {
-    border-radius: 0 0 10px 0;
-  }
-}

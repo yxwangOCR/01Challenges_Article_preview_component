@@ -11,35 +11,39 @@ const Cards = ({ imgUrl, title, name, date, profile, description }) => {
         alt={title}
       />
       <div className='flex flex-col justify-between mx-4 p-2'>
-        <p className='text-Title text-base px-2 py-4 font-medium leading-tight'>
+        <p className='text-Title text-base px-2 pt-6 pb-2 font-medium leading-normal'>
           {title}
         </p>
-        <p className='text-Text text-sm px-2 leading-tight'>{description}</p>
+        <p className='text-Text text-xs px-2 leading-normal'>{description}</p>
         {isToggled ? (
-          <div className='flex items-center justify-between absolute bottom-5'>
+          <div className='flex items-center justify-between gap-[3rem] fixed bottom-0 left-0 w-[330px] h-[70px] p-6'>
             <div className='flex justify-between items-center gap-2 px-2'>
-              <img src={profile} alt={name} className='w-8 h-8 rounded-full' />
+              <img
+                src={profile}
+                alt={name}
+                className='w-10 h-10 rounded-full object-cover'
+              />
               <div>
-                <p className='text-xs'>{name}</p>
-                <p className='text-xs'>{date}</p>
+                <p className='text-sm font-medium text-Title'>{name}</p>
+                <p className='text-xs font-normal text-Text'>{date}</p>
               </div>
             </div>
             <span
-              className='card__footer__share'
+              className='w-8 h-8 rounded-full bg-Body text-Title text-center flex items-center justify-center cursor-pointer'
               onClick={() => setToggle(!isToggled)}>
               <i className='ri-share-forward-fill'></i>
             </span>
           </div>
         ) : (
-          <div className='card__footer__toggled'>
-            <div className='social__media'>
-              <span>SHARE</span>
-              <i className='ri-facebook-box-fill'></i>
-              <i className='ri-twitter-fill'></i>
-              <i className='ri-pinterest-fill'></i>
+          <div className='bg-Title flex items-center justify-between gap-[3rem] fixed bottom-0 left-0 rounded-b-lg w-[330px] h-[70px] p-6'>
+            <div className='text-White bg-Title flex justify-between items-center gap-[1rem] text-sm px-2'>
+              <span className='tracking-wider text-Share'>SHARE</span>
+              <i className='ri-facebook-box-fill text-2xl'></i>
+              <i className='ri-twitter-fill text-2xl'></i>
+              <i className='ri-pinterest-fill text-2xl'></i>
             </div>
             <span
-              className='card__footer__share'
+              className='text-White bg-Text w-8 h-8 rounded-full text-center flex items-center justify-center cursor-pointer'
               onClick={() => setToggle(!isToggled)}>
               <i className='ri-share-forward-fill'></i>
             </span>
