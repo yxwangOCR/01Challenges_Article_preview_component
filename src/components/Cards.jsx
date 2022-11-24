@@ -1,24 +1,32 @@
-import useToggle from "../useToggle";
+import { useState } from "react";
 
 const Cards = ({ imgUrl, title, name, date, profile, description }) => {
-  const [isToggled, setToggle] = useToggle(false);
+  const [isToggled, setToggle] = useState(false);
 
   return (
-    <div className='card'>
-      <img className='card__image' src={imgUrl} alt={title} />
-      <div className='card__content'>
-        <p className='card__title'>{title}</p>
-        <p className='card__text'>{description}</p>
+    <div className='bg-White rounded-lg m-6 drop-shadow-md w-[330px] h-[510px]'>
+      <img
+        className='w-[330px] h-[200px] rounded-t-lg'
+        src={imgUrl}
+        alt={title}
+      />
+      <div className='flex flex-col justify-between mx-4 p-2'>
+        <p className='text-Title text-base px-2 py-4 font-medium leading-tight'>
+          {title}
+        </p>
+        <p className='text-Text text-sm px-2 leading-tight'>{description}</p>
         {isToggled ? (
-          <div className='card__footer'>
-            <div className='card__footer__info'>
-              <img src={profile} alt={name} />
+          <div className='flex items-center justify-between absolute bottom-5'>
+            <div className='flex justify-between items-center gap-2 px-2'>
+              <img src={profile} alt={name} className='w-8 h-8 rounded-full' />
               <div>
-                <p>{name}</p>
-                <p>{date}</p>
+                <p className='text-xs'>{name}</p>
+                <p className='text-xs'>{date}</p>
               </div>
             </div>
-            <span className='card__footer__share' onClick={setToggle}>
+            <span
+              className='card__footer__share'
+              onClick={() => setToggle(!isToggled)}>
               <i className='ri-share-forward-fill'></i>
             </span>
           </div>
@@ -30,7 +38,9 @@ const Cards = ({ imgUrl, title, name, date, profile, description }) => {
               <i className='ri-twitter-fill'></i>
               <i className='ri-pinterest-fill'></i>
             </div>
-            <span className='card__footer__share' onClick={setToggle}>
+            <span
+              className='card__footer__share'
+              onClick={() => setToggle(!isToggled)}>
               <i className='ri-share-forward-fill'></i>
             </span>
           </div>
