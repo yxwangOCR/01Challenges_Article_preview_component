@@ -4,19 +4,19 @@ const Cards = ({ imgUrl, title, name, date, profile, description }) => {
   const [isToggled, setToggle] = useState(false);
 
   return (
-    <div className='bg-White rounded-lg m-6 drop-shadow-md w-[330px] h-[510px]'>
+    <div className='bg-White rounded-lg m-6 drop-shadow-md tiny:w-[330px] tiny:h-[510px] md:flex md:w-[740px] md:h-[280px]'>
       <img
-        className='w-[330px] h-[200px] rounded-t-lg'
+        className='tiny:w-[330px] tiny:h-[200px] rounded-t-lg md:w-[290px] md:h-[280px] md:rounded-t-none md:rounded-l-lg'
         src={imgUrl}
         alt={title}
       />
       <div className='flex flex-col justify-between mx-4 p-2'>
-        <p className='text-Title text-base px-2 pt-6 pb-2 font-medium leading-normal'>
+        <p className='text-Title text-base px-2 pt-6 pb-2 font-medium leading-normal md:text-xl'>
           {title}
         </p>
         <p className='text-Text text-xs px-2 leading-normal'>{description}</p>
         {isToggled ? (
-          <div className='flex items-center justify-between gap-[3rem] fixed bottom-0 left-0 w-[330px] h-[70px] p-6'>
+          <div className='flex items-center justify-between tiny:gap-[3rem] fixed bottom-0 left-0 tiny:w-[330px] tiny:h-[70px] tiny:p-6 md:relative md:p-0 md:m-0 md:w-[390px]'>
             <div className='flex justify-between items-center gap-2 px-2'>
               <img
                 src={profile}
@@ -35,8 +35,8 @@ const Cards = ({ imgUrl, title, name, date, profile, description }) => {
             </span>
           </div>
         ) : (
-          <div className='bg-Title flex items-center justify-between gap-[3rem] fixed bottom-0 left-0 rounded-b-lg w-[330px] h-[70px] p-6'>
-            <div className='text-White bg-Title flex justify-between items-center gap-[1rem] text-sm px-2'>
+          <div className='toggle bg-Title flex items-center justify-between tiny:gap-[3rem] fixed bottom-0 left-0 rounded-b-lg tiny:w-[330px] tiny:h-[70px] tiny:p-6 md:relative'>
+            <div className='text-White bg-Title flex justify-between items-center tiny:gap-[1rem] text-sm tiny:px-2'>
               <span className='tracking-wider text-Share'>SHARE</span>
               <i className='ri-facebook-box-fill text-2xl'></i>
               <i className='ri-twitter-fill text-2xl'></i>
