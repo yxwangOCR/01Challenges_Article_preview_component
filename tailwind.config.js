@@ -10,10 +10,8 @@ module.exports = {
       White: "#fff",
     },
     screens: {
-      tiny: "350px",
-      // => @media (min-width: 350px) { ... }
       sm: "375px",
-      // => @media (min-width: 375px) { ... }
+      // => @media (min-width: 350px) { ... }
       md: "768px",
       // => @media (min-width: 768px) { ... }
       lg: "1024px",
