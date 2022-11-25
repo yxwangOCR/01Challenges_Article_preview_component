@@ -2,16 +2,6 @@
 
 This is a solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT).
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-
 ## Overview
 
 ### The challenge
@@ -23,38 +13,14 @@ Users should be able to:
 
 ### Screenshot
 
-## Second version:
-
-![demo5](src/images/demo5.png)
-![demo6](src/images/demo6.png)
-
+![Demo1](src/images/demo1.png)
+![Demo2](src/images/demo2.png)
+![Demo3](src/images/demo3.png)
 ## My process
 
 ### Built with
 
+- Mobile-first workflow
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-
-### What I learned : React custom hooks
-
-```js
-import { useState } from "react";
-const useToggle = (initialState) => {
-  const [show, setShow] = useState(initialState);
-  const toggle = () => setShow(!show);
-  return [show, toggle];
-};
-export default useToggle;
-```
-
-```js
-const [isToggled, setToggle] = useToggle(false);
-{
-  isToggled && <Icons />;
-}
-<span className='share__icon' onClick={setToggle}>
-  <i className='ri-share-forward-fill'></i>
-</span>;
-```
-
-### Continued development : CSS for icons after click.
+- [Tailwind CSS](https://tailwindcss.com/)
