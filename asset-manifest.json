@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/01Challenges_Article_preview_component/static/css/main.32edeac5.css",
-    "main.js": "/01Challenges_Article_preview_component/static/js/main.78ae8bed.js",
-    "static/media/drawers.jpg": "/01Challenges_Article_preview_component/static/media/drawers.631135b079e9f19bada8.jpg",
-    "static/media/architecture.jpg": "/01Challenges_Article_preview_component/static/media/architecture.d8b03727312f8b42ef25.jpg",
+    "main.css": "/01Challenges_Article_preview_component/static/css/main.7d945310.css",
+    "main.js": "/01Challenges_Article_preview_component/static/js/main.e3b254b2.js",
+    "static/media/Home4.jpg": "/01Challenges_Article_preview_component/static/media/Home4.fe5622ea6abb86cf5616.jpg",
+    "static/media/Home3.jpg": "/01Challenges_Article_preview_component/static/media/Home3.9ed64475da9de46e9f58.jpg",
+    "static/media/avatar-joseph.jpg": "/01Challenges_Article_preview_component/static/media/avatar-joseph.f6da544a4a296774802d.jpg",
+    "static/media/Home1.jpg": "/01Challenges_Article_preview_component/static/media/Home1.631135b079e9f19bada8.jpg",
+    "static/media/Home2.jpg": "/01Challenges_Article_preview_component/static/media/Home2.d8b03727312f8b42ef25.jpg",
+    "static/media/avatar-julie.jpg": "/01Challenges_Article_preview_component/static/media/avatar-julie.8816b57b343eb6dcd6d4.jpg",
     "static/media/avatar-campbell.jpg": "/01Challenges_Article_preview_component/static/media/avatar-campbell.86418473c9f1612a01f8.jpg",
     "index.html": "/01Challenges_Article_preview_component/index.html",
-    "main.32edeac5.css.map": "/01Challenges_Article_preview_component/static/css/main.32edeac5.css.map",
-    "main.78ae8bed.js.map": "/01Challenges_Article_preview_component/static/js/main.78ae8bed.js.map"
+    "main.7d945310.css.map": "/01Challenges_Article_preview_component/static/css/main.7d945310.css.map",
+    "main.e3b254b2.js.map": "/01Challenges_Article_preview_component/static/js/main.e3b254b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.32edeac5.css",
-    "static/js/main.78ae8bed.js"
+    "static/css/main.7d945310.css",
+    "static/js/main.e3b254b2.js"
   ]
 }
